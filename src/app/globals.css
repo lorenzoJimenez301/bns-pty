@@ -1,0 +1,83 @@
+@import "tailwindcss";
+@plugin "flowbite-react/plugin/tailwindcss";
+@source "../../.flowbite-react/class-list.json";
+@import "flowbite";
+
+@font-face {
+  font-family: "scotia";
+  src: url("/fonts/Scotia_W_Bd.woff") format("woff");
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "scotia";
+  src: url("/fonts/Scotia_W_Lt.woff") format("woff");
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "scotia";
+  src: url("/fonts/Scotia_W_Rg.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "scotia";
+  src: url("/fonts/Scotia_W_Headline.woff") format("woff");
+  font-weight: 900;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "scotia";
+  src: url("/fonts/Scotia_Legal.ttf") format("woff");
+  font-weight: 100;
+  font-style: normal;
+}
+
+* {
+  font-family: "scotia", sans-serif;
+}
+
+body {
+  background-color: white;
+}
+
+@theme{
+  --color-rojo-scotia:#ec111a;
+}
+
+.rojo-scotia {
+  background-color: #ec111a;
+}
+
+.rojo-claro-scotia {
+  background-color: #a6000e;
+}
+
+.text-oscuro-scotia {
+  color: #333;
+}
+
+.text-medioOscuro-scotia {
+  color: #4d4d4d;
+}
+
+.rojo-scotia-medio {
+  background-color: #ec111a;
+}
+
+.slide {
+  display: none;
+  position: absolute;
+  inset: 0;
+  transition: opacity 0.7s ease-in-out;
+}
+
+.slide.active {
+  display: block;
+  opacity: 1;
+}
